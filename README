@@ -1,0 +1,13 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1300
+
+This is a very simple script that allows you to easily do case-preserving text replacements over an arbitrary range. See vimscript #6 by Michael Geddes for the functions this script depends on.
+
+For example:
+
+:'<,'>call S('building','campus')
+
+will replace all occurrences of "building" with "campus", "BUILDING_ID" with "CAMPUS_ID", "getBuilding" with "getCampus", etc. across the currently selected range.
+
+Also included is the SS(pat,sub) function which uses KeepCaseSameLen for the substitutions instead of KeepCase.
+
+Thanks to Michael Geddes for a great script!
